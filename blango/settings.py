@@ -101,6 +101,7 @@ class Dev(Configuration):
       "allauth.account",
       "allauth.socialaccount",
       "allauth.socialaccount.providers.google",
+      "rest_framework",
   ]
 
   MIDDLEWARE = [
@@ -209,4 +210,4 @@ class Dev(Configuration):
   ACCOUNT_AUTHENTICATION_METHOD = "email"
   
 class Prod(Dev):
-    DEBUG = False
+    DEBUG = True
